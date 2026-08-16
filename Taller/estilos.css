@@ -1,0 +1,123 @@
+body {
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.ficha {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nombre {
+    color: #d4a537;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.clase {
+    color: #9b7cd4;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vida {
+    color: #d4372f;
+    font-weight: bold;
+}
+
+/*a {
+    color: #d4a537;
+    text-decoration: none;
+}*/
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+[data-tipo="heroe"] {
+    border-left: 5px solid blue;
+}
+
+[data-tipo="villano"] {
+    border-left: 5px solid rgb(255, 0, 0);
+}
+
+#titulo-galeria {
+    letter-spacing: 1px;
+    border-bottom: 2px solid #d4a537;
+    padding-bottom: 8px;
+}
+
+.redes-pagina p {
+    font-style: italic;
+}
+
+/* El combinador descendiente (espacio) no le importa cuántos niveles hay en el medio:
+   siempre encuentra <p> dentro del contenedor. */
+
+.redes-pagina > p {
+background-color: #2a2a2a;
+padding: 8px 12px;
+border-radius: 6px;
+}
+
+/* El combinador hijo directo (>) solo aplica cuando el elemento objetivo es hijo inmediato.
+   Si hay otro contenedor en el medio, no funciona. */
+
+h3 + p {
+margin-top: 16px;
+border-top: 2px solid #d4a537;
+padding-top: 12px;
+}
+
+/* El combinador hermano adyacente (+) solo aplica cuando dos elementos están
+   al mismo nivel y pegados, sin nada entre ellos. Si mueves algo, deja de funcionar. */
+
+h3 ~ p {
+    color: #d4a537;
+    font-weight: bold;
+}
+
+/* El combinador hermano general (~) aplica a todos los elementos del tipo
+   especificado que vengan después, al mismo nivel, sin importar si están
+   pegados o no. Es como +, pero más permisivo. */
+
+.resaltado {
+    border: 3px solid #d4a537
+}
+
+.ficha img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.borde-redondeado {
+    border-radius: 12px;
+}
+
+button {
+    background-color: #d4a537;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px;
+}
+
