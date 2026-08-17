@@ -6,6 +6,7 @@ body {
 
 .ficha {
     background-color: #2a2a2a;
+    color: #e6e6e6;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -95,14 +96,6 @@ h3 ~ p {
 
 .resaltado {
     border: 3px solid #d4a537
-}
-
-.ficha img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
 }
 
 .borde-redondeado {

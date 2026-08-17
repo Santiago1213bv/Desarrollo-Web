@@ -8,7 +8,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet"href="estilos.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="estilos.css">
 
 <title>Galeria de personajes</title>
 
@@ -16,83 +18,192 @@
 
 <body>
 
-<h1 id = "titulo-galeria">Bienvenidos a la galeria de SuperHeroes!</h1>
+<h1 id = "titulo-galeria" class="text-center">
+    Bienvenidos a la galeria de SuperHeroes!
+</h1>
+
 <p>Este proyecto queire permitir a sus visitantes, que puedan conocer una galeria de SuperHerones, donde podran evidenciar sus habilidades!</p>
 <p>A continuacion podran encontrar a los SuperHeroes!</p>
 <a href="personajes.html">Ver Personajes</a>
 <a href="index.html">Sobre el proyecto</a>
 
-    <article class="ficha" data-tipo="heroe"> 
+<div id="carouselSuperHeroes" class="carousel slide" data-bs-ride="carousel">
 
-    <img src="Kratos.png" alt="Kratos, el dios del hielo.">
-    <h2 class="nombre">Kratos</h2>
-    <p class="clase">Guerrero</p>
-    <p>El temerario Kratos, famoso por matar a los mas grandes Dioses del olimpo.</p>
-    <h3>Estadisticas: </h3>
-    <ul class = "stats">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselSuperHeroes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselSuperHeroes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselSuperHeroes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-        <li>Fuerza: 100</li>
-        <li>Defensa: 80</li>
-        <li>Velocidad: 50</li>
-    
-    </ul>
-        <p class="vida">Vida: 300 HP</p>
+    <div class="carousel-inner">
 
-    </article>
+        <div class="carousel-item active">
+            <img src="berlin.png" class="d-block w-100" alt="Berlin">
 
-    <article class="ficha" data-tipo="heroe"> 
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Explora el mundo</h5>
+                <p>Descubre nuevos lugares y grandes aventuras.</p>
+            </div>
+        </div>
 
-    <img src="glaidador.png" alt="Lucas, conocido por sus grandes azañas en las guerras.">
-    <h2 class="nombre">Lucas</h2>
-    <p class="clase">Defensor</p>
-    <p>Lucas, el gladiador de las 100 batallas.</p>
-    <h3>Estadisticas: </h3>
-    <ul class = "stats">
+        <div class="carousel-item">
+            <img src="paris.png" class="d-block w-100" alt="Paris">
 
-        <li>Fuerza: 75</li>
-        <li>Defensa: 90</li>
-        <li>Velocidad: 30</li>
-    
-    </ul>
-        <p class="vida">Vida: 100 HP</p>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Forja tu leyenda</h5>
+                <p>Elige tu personaje y comienza tu propia aventura.</p>
+            </div>
+        </div>
 
-    </article>
+        <div class="carousel-item">
+            <img src="newYork.png" class="d-block w-100" alt="New York">
 
-    <article class="ficha" data-tipo="villano"> 
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Comparte la aventura</h5>
+                <p>Encuentra aliados y disfruta el camino.</p>
+            </div>
+        </div>
 
-    <img src="puercos.png.jpg" alt="El grupo de marranos mas peligrosos de la aldea.">
-    <h2 class="nombre">Puercos Malvados</h2>
-    <p class="clase">Volador</p>
-    <p>Los puercos que vuelan, lo inimaginable.</p>
-    <h3>Estadisticas: </h3>
-    <ul class = "stats">
+    </div>
 
-        <li>Fuerza: 65</li>
-        <li>Defensa: 5</li>
-        <li>Velocidad: 100</li>
-    
-    </ul>
-        <p class="vida">Vida: 100 HP c/u</p>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSuperHeroes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
 
-    </article>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSuperHeroes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
 
-    <article class="ficha" data-tipo="villano"> 
+</div>
 
-    <img src="lanzarrocas.png" alt="lanzarrocas, el orejon lanza piedras.">
-    <h2 class="nombre">Lanzarrocas</h2>
-    <p class="clase">Defensor</p>
-    <p>lanzarrocas, mejor conocido como el hombre morado.</p>
-    <h3>Estadisticas: </h3>
-    <ul class = "stats">
+<div class ="container">
 
-        <li>Fuerza: 95</li>
-        <li>Defensa: 90</li>
-        <li>Velocidad: 10</li>
-    
-    </ul>
-        <p class="vida">Vida: 200 HP</p>
+    <div class="row g-3">
 
-    </article>
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article class="ficha card" data-tipo="heroe"> 
+
+                <div class="card-body">
+                
+
+                    <img src="Kratos.png" 
+                         alt="Kratos, el dios del hielo."
+                         class="img-fluid">
+
+                    <h2 class="nombre">Kratos</h2>
+                    <p class="clase">Guerrero</p>
+                    <p>El temerario Kratos, famoso por matar a los mas grandes Dioses del olimpo.</p>
+                    <h3>Estadisticas: </h3>
+                    <ul class = "stats">
+
+                        <li>Fuerza: 100</li>
+                        <li>Defensa: 80</li>
+                        <li>Velocidad: 50</li>
+                    
+                        </ul>
+                        <p class="vida">Vida: 300 HP</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article class="ficha card" data-tipo="heroe"> 
+
+                <div class="card-body">
+
+                    <img src="glaidador.png" 
+                        alt="Lucas, conocido por sus grandes azañas en las guerras."
+                        class="img-fluid">
+
+                    <h2 class="nombre">Lucas</h2>
+                    <p class="clase">Defensor</p>
+                    <p>Lucas, el gladiador de las 100 batallas.</p>
+                    <h3>Estadisticas: </h3>
+                    <ul class = "stats">
+
+                        <li>Fuerza: 75</li>
+                        <li>Defensa: 90</li>
+                        <li>Velocidad: 30</li>
+                    
+                        </ul>
+                        <p class="vida">Vida: 100 HP</p>
+
+                </div>
+
+             </article>
+
+        </div>
+
+
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article class="ficha card" data-tipo="villano"> 
+
+                <div class="card-body">
+
+                    <img src="puercos.png.jpg" 
+                    alt="El grupo de marranos mas peligrosos de la aldea."
+                    class="img-fluid">
+                    
+                    <h2 class="nombre">Puercos Malvados</h2>
+                    <p class="clase">Volador</p>
+                    <p>Los puercos que vuelan, lo inimaginable.</p>
+                    <h3>Estadisticas: </h3>
+                    <ul class = "stats">
+
+                            <li>Fuerza: 65</li>
+                            <li>Defensa: 5</li>
+                            <li>Velocidad: 100</li>
+                        
+                        </ul>
+                        <p class="vida">Vida: 100 HP c/u</p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article class="ficha card" data-tipo="villano"> 
+
+                <div class="card-body">
+
+                    <img src="lanzarrocas.png" 
+                    alt="lanzarrocas, el orejon lanza piedras."
+                    class="img-fluid">
+
+                    <h2 class="nombre">Lanzarrocas</h2>
+                    <p class="clase">Defensor</p>
+                    <p>lanzarrocas, mejor conocido como el hombre morado.</p>
+                    <h3>Estadisticas: </h3>
+                    <ul class = "stats">
+
+                            <li>Fuerza: 95</li>
+                            <li>Defensa: 90</li>
+                            <li>Velocidad: 10</li>
+                        
+                            </ul>
+                            <p class="vida">Vida: 200 HP</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</div>
 
 
     <div class="redes-pagina">
@@ -109,6 +220,7 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </body>
